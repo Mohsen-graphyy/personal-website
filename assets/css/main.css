@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+*{
+  font-family: 'Nunito Sans', sans-serif;
+  overflow: hidden;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.5s;
+}
+
+.slide-enter-to,
+.slide-leave {
+  transform: translateX(0);
+}
+
+/* Slide from the left */
+.slide-enter {
+  transform: translateX(-100%);
+}
+
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
+/* Slide from the right */
+.slide-enter.from-right {
+  transform: translateX(100%);
+}
+
+.slide-leave-to.from-right {
+  transform: translateX(-100%);
+}

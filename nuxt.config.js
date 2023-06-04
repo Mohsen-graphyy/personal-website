@@ -1,5 +1,12 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  mode: 'spa',
+  generate: {
+    dir: 'docs'
+  },
+  router: {
+    base: '/personal-website/'
+  },
   layout: 'default',
   head: {
     title: 'resume',

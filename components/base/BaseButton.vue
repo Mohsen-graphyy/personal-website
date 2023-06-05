@@ -1,5 +1,9 @@
 <template>
-  <button :class="btnClass">
+  <button
+    class="flex justify-between items-center rounded-lg border transition duration-100"
+    :class="btnClass"
+    @click="$emit('clicked')"
+  >
     <p class="font-semibold">{{ buttonTitle }}</p>
     <slot></slot>
   </button>
@@ -16,7 +20,7 @@ export default {
       type: String,
       required: false,
       default:
-        "flex justify-between items-center p-2 rounded-lg border transition duration-100 border-violet-600 bg-violet-200 text-violet-600 hover:bg-violet-600 hover:text-white",
+        "p-2 border-violet-600 bg-violet-200 text-violet-600 hover:bg-violet-600 hover:text-white",
     },
   },
 };

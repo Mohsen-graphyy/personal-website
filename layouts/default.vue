@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto from-right">
+  <section class="container mx-auto from-right px-10">
     <desktop-header></desktop-header>
     <Nuxt />
   </section>

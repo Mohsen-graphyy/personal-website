@@ -24,13 +24,13 @@ export default {
       {
         rel: "icon",
         type: "image/x-icon",
-        href: "/fav/favicon.ico",
+        href: "/personal-website/fav/favicon.ico",
       },
       {
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        href: "/fav/favicon-32x32.png",
+        href: "/personal-website/fav/favicon-32x32.png",
       },
     ],
   },

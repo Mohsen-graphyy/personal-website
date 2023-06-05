@@ -1,7 +1,5 @@
 <template>
-  <div>
-    about me
-  </div>
+  <div>about me</div>
 </template>
 <router>
   {
@@ -10,16 +8,12 @@
 </router>
 <script>
 export default {
-  head(){
+  head() {
     return {
-      meta: {
-        fromRight: true
-      }
-    }
-  }
-}
+      title: "About me",
+    };
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

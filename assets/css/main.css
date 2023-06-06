@@ -6,7 +6,6 @@
 
 *{
   font-family: 'Inter', sans-serif;
-  overflow: hidden;
 }
 .slide-enter-active,
 .slide-leave-active {
@@ -34,4 +33,43 @@
 
 .slide-leave-to.from-right {
   transform: translateX(-100%);
+}
+.menu {
+  position: fixed;
+  top: 82px;
+  right: 0;
+  height: 100vh;
+  z-index: 9999 !important;
+}
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.menu-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #7c3aed;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.shadow{
+  box-shadow: 0 50px 50px 0px #7c3aed;
+}
+.menu-line:last-child {
+  margin-bottom: 0;
+}
+
+.menu-icon.clicked .menu-line:first-child {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.clicked .menu-line:last-child {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-icon.clicked .menu-line:nth-child(2) {
+  opacity: 0;
 }

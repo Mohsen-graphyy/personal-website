@@ -1,10 +1,12 @@
 <template>
   <div class="flex items-center gap-10">
-    <nuxt-link v-for="headerItem in headerItems"
-    class="font-semibold"
-    :class="{'text-violet-600 font-bold' : routeName === headerItem.link}"
-     :key="headerItem.id"
-     :to="{name: headerItem.link}">
+    <nuxt-link
+      v-for="headerItem in headerItems"
+      class="font-semibold"
+      :class="{ 'text-violet-600 font-bold': routeName === headerItem.link }"
+      :key="headerItem.id"
+      :to="{ name: headerItem.link }"
+    >
       {{ headerItem.title }}
     </nuxt-link>
   </div>
@@ -12,41 +14,40 @@
 
 <script>
 export default {
-  data(){
-    return{
+  data() {
+    return {
       headerItems: [
         {
           id: 1,
-          title: 'Home',
-          link: 'homePage'
+          title: "Home",
+          link: "homePage",
         },
         {
           id: 2,
-          title: 'About Me',
-          link: 'aboutMe'
+          title: "About Me",
+          link: "aboutMe",
         },
         {
           id: 3,
-          title: 'Home',
-          link: 'home'
+          title: "Home",
+          link: "home",
         },
         {
           id: 4,
-          title: 'Home',
-          link: 'home'
+          title: "Home",
+          link: "home",
         },
       ],
-      routeName: null
-    }
+      routeName: null,
+    };
   },
-  watch:{
-  '$route.name'(){
-    this.routeName = this.$route.name
-  }
+  watch: {
+    "$route.name"() {
+      this.routeName = this.$route.name;
+    },
   },
-mounted(){
-  this.routeName = this.$route.name
-}
-
-}
+  mounted() {
+    this.routeName = this.$route.name;
+  },
+};
 </script>

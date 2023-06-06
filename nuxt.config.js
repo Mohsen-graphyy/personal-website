@@ -57,7 +57,7 @@ export default {
   buildModules: ["@nuxtjs/router-extras"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["nuxt-breakpoints"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -68,6 +68,17 @@ export default {
           autoprefixer: {},
         },
       },
+    },
+  },
+  breakpoints: {
+    xs: 321,
+    sm: 361,
+    md: 601,
+    lg: 901,
+    xl: 901,
+    options: {
+      polyfill: true,
+      throttle: 1000,
     },
   },
 };

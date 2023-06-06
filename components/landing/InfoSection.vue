@@ -7,7 +7,7 @@
       <div class="border-t border-gray-600 w-24"></div>
       <p class="pl-5 font-semibold text-xl text-gray-600">FrontEnd Developer</p>
     </div>
-    <div class="mt-8 mr-48">
+    <div class="mt-8 lg:mr-48">
       A responsible, punctual, and dedicated Frontend developer with over three
       years of professional experience in private and public companies.
     </div>
@@ -50,12 +50,8 @@ export default {
   },
   methods: {
     cvDownloader() {
-      // console.log();
-      if (process.env.NODE_ENV === "development") {
-        const base = window.location;
-        window.open(base + "/file/mohsenPiri.pdf", "_blank");
-        // window.location.href = ;
-      }
+      const base = window.location;
+      window.open(base + "file/mohsenPiri.pdf", "_blank");
     },
   },
 };

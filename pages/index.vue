@@ -23,6 +23,11 @@ import InfoSection from "../components/landing/InfoSection.vue";
 export default {
   components: { InfoSection },
   name: "IndexPage",
+  head() {
+    return {
+      title: "Mohsen Piri Resume",
+    };
+  },
 };
 </script>
 <style>

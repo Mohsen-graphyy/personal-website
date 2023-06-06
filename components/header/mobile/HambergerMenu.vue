@@ -8,39 +8,63 @@
       <span v-for="item in 3" :key="item" class="menu-line"></span>
     </div>
 
-    <transition
-      enter-active-class="transition ease-out duration-200 transform"
-      enter-class="opacity-0 scale-95"
-      enter-to-class="opacity-100 scale-100"
-      leave-active-class="transition ease-in duration-75 transform"
-      leave-class="opacity-100 scale-100"
-      leave-to-class="opacity-0 scale-95"
-    >
-      {{ isOpen }}
-      <div
-        v-if="isOpen"
-        class="flex flex-col gap-3 px-2 menu w-2/3 shadow-violet-600 shadow bg-white"
-      >
-        <nuxt-link
-          v-for="headerItem in headerItems"
-          class="font-semibold"
-          :class="{
-            'text-violet-600 font-bold': routeName === headerItem.link,
-          }"
-          :key="headerItem.id"
-          :to="{ name: headerItem.link }"
-        >
-          <div class="rounded-xl border border-violet-500 px-5 py-2">
-            {{ headerItem.title }}
-          </div>
-        </nuxt-link>
+    <transition name="fade">
+      <div v-show="isOpen">
+        <div class="w-2/3 flex flex-col gap-3 bg-violet-200 menu px-3 py-4">
+          <nuxt-link
+            v-for="headerItem in headerItems"
+            class="font-semibold"
+            :key="headerItem.id"
+            :to="{ name: headerItem.link }"
+          >
+            <div
+              class="flex px-5 py-2 border-b text-gray-500"
+              :class="{
+                'border-violet-500 font-bold': routeName === headerItem.link,
+              }"
+              @click="isOpen = !isOpen"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                :class="{
+                  'text-violet-600': routeName === headerItem.link,
+                }"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  :d="headerItem.icon.d"
+                />
+              </svg>
+              <p
+                class="pl-3"
+                :class="{ 'text-violet-600': routeName === headerItem.link }"
+              >
+                {{ headerItem.title }}
+              </p>
+            </div>
+          </nuxt-link>
+        </div>
       </div>
     </transition>
+    <base-shadow
+      :is-show="isOpen"
+      @click.native="isOpen = !isOpen"
+    ></base-shadow>
   </div>
 </template>
 
 <script>
+import BaseShadow from "~/components/base/BaseShadow.vue";
 export default {
+  components: {
+    BaseShadow,
+  },
   data() {
     return {
       isOpen: false,
@@ -49,21 +73,17 @@ export default {
           id: 1,
           title: "Home",
           link: "homePage",
+          icon: {
+            d: "M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25",
+          },
         },
         {
           id: 2,
           title: "About Me",
           link: "aboutMe",
-        },
-        {
-          id: 3,
-          title: "Home",
-          link: "home",
-        },
-        {
-          id: 4,
-          title: "Home",
-          link: "home",
+          icon: {
+            d: "M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z",
+          },
         },
       ],
       routeName: null,

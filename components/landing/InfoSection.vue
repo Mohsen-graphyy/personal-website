@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col">
-    <h1 class="text-7xl font-semibold">
+    <h1 class="text-3xl md:text-7xl font-semibold">
       Mohsen Piri <span class="text-3xl">🖐🏻</span>
     </h1>
     <div class="flex mt-3 items-center">

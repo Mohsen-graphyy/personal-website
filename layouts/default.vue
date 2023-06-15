@@ -1,5 +1,7 @@
 <template>
-  <section class="container mx-auto from-right lg:px-10 px-5 overflow-x-hidden">
+  <section
+    class="w-full z-50 container mx-auto from-right md:py-7 lg:px-10 px-5 overflow-x-hidden"
+  >
     <desktop-header v-if="$breakpoints.xl"></desktop-header>
     <mobile-header v-else></mobile-header>
     <Nuxt />

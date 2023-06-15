@@ -4,9 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;900&family=Raleway:wght@100;400;700&display=swap');
 
-*{
+* {
   font-family: 'Inter', sans-serif;
 }
+
 .slide-enter-active,
 .slide-leave-active {
   transition: transform 0.5s;
@@ -34,6 +35,7 @@
 .slide-leave-to.from-right {
   transform: translateX(-100%);
 }
+
 .menu {
   position: fixed;
   top: 82px;
@@ -41,6 +43,7 @@
   height: 100vh;
   z-index: 9999 !important;
 }
+
 .menu-icon {
   display: inline-block;
   cursor: pointer;
@@ -55,6 +58,7 @@
   background-color: #7c3aed;
   transition: transform 0.3s, opacity 0.3s;
 }
+
 .menu-line:last-child {
   margin-bottom: 0;
 }
@@ -87,6 +91,7 @@
   opacity: 0;
   overflow: hidden;
 }
+
 .shadow {
   position: fixed;
   width: 100%;
@@ -95,4 +100,25 @@
   left: 0;
   opacity: 0.8;
   z-index: -10;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #4b5563;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.underline:hover::after {
+  transform: scaleX(1);
 }

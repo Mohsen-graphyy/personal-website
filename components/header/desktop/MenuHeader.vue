@@ -3,7 +3,11 @@
     <nuxt-link
       v-for="headerItem in headerItems"
       class="font-semibold"
-      :class="{ 'text-violet-600 font-bold': routeName === headerItem.link }"
+      :class="[
+        routeName === headerItem.link
+          ? 'text-violet-600 font-bold'
+          : 'underline',
+      ]"
       :key="headerItem.id"
       :to="{ name: headerItem.link }"
     >

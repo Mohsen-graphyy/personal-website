@@ -10,7 +10,7 @@
 
     <transition name="fade">
       <div v-show="isOpen">
-        <div class="w-2/3 flex flex-col gap-3 bg-violet-100 menu px-3 py-4">
+        <div class="w-2/3 flex flex-col gap-3 bg-violet-50 menu px-3 py-4">
           <nuxt-link
             v-for="headerItem in headerItems"
             class="font-semibold"

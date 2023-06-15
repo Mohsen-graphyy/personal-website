@@ -33,14 +33,18 @@
         </svg>
       </base-button>
     </div>
+    <follow-me></follow-me>
   </div>
 </template>
 
 <script>
 import BaseButton from "~/components/base/BaseButton.vue";
+import FollowMe from "~/components/landing/FollowMe.vue";
+
 export default {
   components: {
     BaseButton,
+    FollowMe,
   },
   data() {
     return {

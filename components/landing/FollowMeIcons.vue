@@ -1,7 +1,7 @@
 <template>
   <a :href="link" target="_blank" rel="noopener">
     <svg
-      class="ml-4 rounded-lg h-10 w-10 text-purple-500 bg-white p-2 transition duration-150 hover:bg-violet-400 hover:text-white"
+      class="ml-4 drop-shadow-xl rounded-lg h-10 w-10 text-purple-500 bg-white p-2 transition duration-150 hover:bg-violet-400 hover:text-white"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"

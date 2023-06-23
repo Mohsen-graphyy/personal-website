@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      class="py-40 md:py-20 flex flex-col md:flex-row justify-around items-center"
+      class="pt-40 md:pt-20 flex flex-col md:flex-row justify-around items-center"
     >
       <info-section class="basis-1/2"></info-section>
       <div class="basis-1/2 mt-10 md:mt-0 overflow-hidden hover:rounded-2xl">
@@ -12,6 +12,7 @@
         />
       </div>
     </section>
+    <music-player></music-player>
   </div>
 </template>
 <router>
@@ -21,8 +22,9 @@
 </router>
 <script>
 import InfoSection from "~/components/landing/InfoSection.vue";
+import MusicPlayer from "~/components/landing/music_player/MusicPlayer.vue";
 export default {
-  components: { InfoSection },
+  components: { InfoSection, MusicPlayer },
   name: "IndexPage",
   head() {
     return {

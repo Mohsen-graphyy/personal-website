@@ -83,7 +83,7 @@ export default {
       song: {
         title: "Introduction",
         artist: "Mohsen",
-        url: `/file/StiveDemo.mp3`,
+        url: `/personal-website/file/StiveDemo.mp3`,
       },
       audio: null,
       progress: 0,

@@ -1,7 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  mode: "spa",
-  target: "static",
+  // mode: "spa",
+  mode: "universal",
+  // target: "static",
   generate: {
     dir: "docs",
   },
@@ -69,6 +70,11 @@ export default {
         },
       },
     },
+    publicPath: "/personal-website/",
+    /*
+     ** You can extend webpack config here
+     */
+    extend(config, ctx) {},
   },
   breakpoints: {
     xs: 321,

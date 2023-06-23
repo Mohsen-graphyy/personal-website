@@ -18,7 +18,16 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        name: "description",
+        content: "This is Mohsen Piri ('frontEnd developer') personal website",
+      },
+      {
+        name: "keywords",
+        content:
+          "Mohsen, mohsen, piri, Piri, mohsen piri, Mohsen piri, Mohsen Piri, frontEnd developer, front-end, vue.js, vue, nuxt.js, nuxt",
+      },
+      // { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [
@@ -58,7 +67,7 @@ export default {
   buildModules: ["@nuxtjs/router-extras"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["nuxt-breakpoints"],
+  modules: ["nuxt-breakpoints", "@nuxtjs/sitemap"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -86,5 +95,10 @@ export default {
       polyfill: true,
       throttle: 1000,
     },
+  },
+  sitemap: {
+    hostname: "https://mohsen-graphyy.github.io/personal-website/",
+    gzip: true,
+    exclude: ["/admin/**"],
   },
 };

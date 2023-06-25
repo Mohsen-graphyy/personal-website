@@ -1,19 +1,12 @@
 <template>
-  <div class="p-5 md:p-10 flex flex-col md:basis-3/4 w-full">
-    <h1 class="font-bold text-xl">{{ song.title }}</h1>
-    <h3 class="text-gray-700">{{ song.artist }}</h3>
-    <div class="flex flex-row gap-2 items-center my-3">
-      <div class="w-full h-0.5 bg-gray-100">
-        <div
-          class="h-full bg-violet-500"
-          :style="{ width: progress + '%' }"
-        ></div>
-      </div>
-      <p>{{ currentTimeFormatted }}</p>
+  <div class="flex flex-col items-center md:flex-row gap-3 w-full md:ml-5">
+    <div class="flex flex-col">
+      <h1 class="font-bold text-xl">{{ song.title }}</h1>
+      <h3 class="text-gray-700">{{ song.artist }}</h3>
     </div>
     <div class="flex flex-row justify-center gap-3 items-center">
       <div
-        class="w-10 h-10 rotate-180 flex justify-center items-center cursor-pointer rounded-xl bg-gray-500"
+        class="cursor-not-allowed w-10 h-10 rotate-180 flex justify-center items-center cursor-pointer rounded-xl bg-gray-200"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +51,7 @@
         </svg>
       </div>
       <div
-        class="w-10 h-10 flex justify-center items-center cursor-pointer rounded-xl bg-gray-500"
+        class="w-10 cursor-not-allowed h-10 flex justify-center items-center cursor-pointer rounded-xl bg-gray-200"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -71,6 +64,20 @@
           />
         </svg>
       </div>
+    </div>
+    <div class="flex flex-row gap-2 items-center my-3 w-full">
+      <div class="w-full h-3 bg-gray-100 rounded-md">
+        <div
+          class="h-full bg-gradient-to-r from-indigo-500 rounded-md relative"
+          :style="{ width: progress + '%' }"
+        >
+          <span
+            :class="{ 'left-0': progress === 0 }"
+            class="w-5 h-5 -top-1 -right-3 bg-violet-500 absolute rounded-lg"
+          ></span>
+        </div>
+      </div>
+      <p>{{ currentTimeFormatted }}</p>
     </div>
   </div>
 </template>
@@ -102,6 +109,9 @@ export default {
   mounted() {
     this.audio = new Audio(this.song.url);
     this.audio.addEventListener("timeupdate", this.updateProgress);
+  },
+  destroyed() {
+    this.togglePlay();
   },
   methods: {
     togglePlay() {

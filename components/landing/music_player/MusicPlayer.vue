@@ -1,15 +1,12 @@
 <template>
   <div
-    class="rounded-xl bg-violet-200 my-10 md:my-24 flex justify-center md:justify-between items-center md:h-52 relative"
+    class="rounded-xl p-5 md:p-2 bg-violet-200 my-10 md:my-24 flex items-center"
   >
-    <div
-      v-if="$breakpoints.xl"
-      class="basis-1/4 flex justify-center items-center p-5"
-    >
+    <div v-if="$breakpoints.xl" class="flex items-center">
       <img
         src="/personal-website/images/mohsen-audio.jpeg"
         alt="mohsen piri"
-        class="rounded-xl w-64 object-cover absolute"
+        class="rounded-xl w-14 h-14 object-cover"
       />
     </div>
     <music-player-container></music-player-container>

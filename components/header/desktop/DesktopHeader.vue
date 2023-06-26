@@ -50,6 +50,7 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.handleScroll);
+    this.handleScroll();
   },
   beforeDestroy() {
     window.removeEventListener("scroll", this.handleScroll);

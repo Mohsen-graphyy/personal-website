@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded-xl p-5 md:p-2 bg-violet-200 my-10 md:my-24 flex items-center"
+    class="rounded-xl p-5 md:p-3 bg-violet-200 my-10 md:my-24 flex items-center"
   >
     <div v-if="$breakpoints.xl" class="flex items-center">
       <img

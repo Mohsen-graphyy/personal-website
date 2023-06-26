@@ -68,7 +68,7 @@
     <div class="flex flex-row gap-2 items-center my-3 w-full">
       <div class="w-full h-3 bg-gray-100 rounded-md">
         <div
-          class="h-full bg-gradient-to-r from-indigo-500 rounded-md relative"
+          class="h-full bg-violet-400 rounded-md relative"
           :style="{ width: progress + '%' }"
         >
           <span

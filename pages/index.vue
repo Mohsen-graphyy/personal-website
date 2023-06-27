@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-screan">
+    <div class="h-screan lg:px-28 md:px-10 px-5">
       <section
         class="pt-40 md:pt-20 flex flex-col md:flex-row justify-around items-center"
       >
@@ -14,6 +14,9 @@
         </div>
       </section>
       <music-player></music-player>
+    </div>
+    <div class="lg:px-28 md:px-10 px-5 py-20 bg-violet-400 relative clip-fit">
+      <div class="">dsad</div>
     </div>
   </div>
 </template>
@@ -40,4 +43,15 @@ export default {
   z-index: -1 !important;
   position: relative;
 }
+/* .clip-fit::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
+  transform: rotate(-5deg);
+  position: absolute;
+  z-index: -1;
+  top: -10%;
+  left: 0;
+} */
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative p-5 md:p-3 md:w-1/2 border border-violet-500 rounded-lg my-20 md:my-24 flex items-center"
+    class="relative p-5 md:p-3 border border-violet-500 rounded-lg my-20 md:my-24 flex items-center"
   >
     <music-player-container
       file="file/StiveDemo.mp3"
@@ -18,8 +18,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-.my-image {
-  filter: hue-rotate(270deg) saturate(1.5) brightness(0.8);
-}
-</style>

@@ -20,7 +20,7 @@
         :btn-class="btnClass"
         @clicked="cvDownloader"
       >
-        <base-icon iconPath="Download" />
+        <base-icon iconPath="Download" svg-class="w-4 h-4 ml-2" />
       </base-button>
     </div>
     <follow-me></follow-me>

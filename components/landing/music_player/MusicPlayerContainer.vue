@@ -1,4 +1,4 @@
-	<template>
+<template>
   <div class="flex w-full">
     <div class="flex flex-col w-full">
       <div class="flex flex-col">
@@ -172,7 +172,7 @@ export default {
     },
     loop: {
       type: Boolean,
-      default: false,
+      default: true,
     },
     fileTitle: {
       type: String,

@@ -23,7 +23,7 @@ export default {
     },
     btnCustomClass: {
       type: String,
-      default: "bg-violet-100 p-1 rounded-lg flex w-fit hover:bg-violet-300",
+      default: "bg-violet-200 p-1 rounded-lg flex w-fit hover:bg-violet-300",
     },
   },
 };

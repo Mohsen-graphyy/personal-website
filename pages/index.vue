@@ -15,8 +15,10 @@
       </section>
       <music-player></music-player>
     </div>
-    <div class="lg:px-28 md:px-10 px-5 py-20 bg-violet-400 relative clip-fit">
-      <div class="">dsad</div>
+    <div class="">
+      <div class="clip-fit"></div>
+      <div class="py-32 lg:px-28 md:px-10 px-5 bg-violet-400">dsad</div>
+      <div class="clip-fit-down"></div>
     </div>
   </div>
 </template>
@@ -42,6 +44,18 @@ export default {
 .z-1 {
   z-index: -1 !important;
   position: relative;
+}
+.clip-fit {
+  -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 20%, 0% 100%);
+  clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: rgb(167 139 250);
+  height: 100px;
+}
+.clip-fit-down {
+  -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 20%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+  background-color: rgb(167 139 250);
+  height: 100px;
 }
 /* .clip-fit::before {
   content: "";

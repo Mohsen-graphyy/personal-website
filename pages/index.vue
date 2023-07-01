@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-screan lg:px-28 md:px-10 px-5">
+    <div class="lg:px-28 md:px-10 px-5">
       <section
         class="pt-40 md:pt-20 flex flex-col md:flex-row justify-around items-center"
       >

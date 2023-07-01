@@ -2,7 +2,7 @@
   <div class="flex flex-col gap-0 relative w-full">
     <span class="clip-fit"></span>
     <div
-      class="py-20 lg:px-28 md:px-10 px-5 bg-violet-400 flex flex-col md:flex-row md:justify-between md:items-start"
+      class="py-20 lg:px-28 md:px-10 px-5 bg-violet-400 flex flex-col md:flex-row md:justify-between md:items-center md:gap-10"
     >
       <slot></slot>
     </div>

@@ -2,9 +2,6 @@
   <div class="flex flex-col">
     <h1 class="text-3xl flex items-center md:text-7xl font-semibold">
       Mohsen Piri
-      <span class="text-3xl"
-        ><img class="w-11 ml-4" src="/personal-website/images/hello.png" alt=""
-      /></span>
     </h1>
     <div class="flex mt-3 items-center">
       <div class="border-t border-gray-600 w-24"></div>

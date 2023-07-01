@@ -13,13 +13,11 @@
           />
         </div>
       </section>
-      <music-player></music-player>
     </div>
-    <div class="">
-      <div class="clip-fit"></div>
-      <div class="py-32 lg:px-28 md:px-10 px-5 bg-violet-400">dsad</div>
-      <div class="clip-fit-down"></div>
-    </div>
+    <base-clip-fit-container class="mt-16">
+      <audio-content></audio-content>
+      <music-player class="md:w-1/2"></music-player>
+    </base-clip-fit-container>
   </div>
 </template>
 <router>
@@ -30,8 +28,9 @@
 <script>
 import InfoSection from "~/components/landing/InfoSection.vue";
 import MusicPlayer from "~/components/landing/music_player/MusicPlayer.vue";
+import AudioContent from "~/components/landing/AudioContent.vue";
 export default {
-  components: { InfoSection, MusicPlayer },
+  components: { InfoSection, MusicPlayer, AudioContent },
   name: "IndexPage",
   head() {
     return {
@@ -45,27 +44,4 @@ export default {
   z-index: -1 !important;
   position: relative;
 }
-.clip-fit {
-  -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 20%, 0% 100%);
-  clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
-  background-color: rgb(167 139 250);
-  height: 100px;
-}
-.clip-fit-down {
-  -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 20%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
-  background-color: rgb(167 139 250);
-  height: 100px;
-}
-/* .clip-fit::before {
-  content: "";
-  width: 100%;
-  height: 100px;
-  background-color: aqua;
-  transform: rotate(-5deg);
-  position: absolute;
-  z-index: -1;
-  top: -10%;
-  left: 0;
-} */
 </style>

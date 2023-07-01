@@ -3,7 +3,7 @@
     <div class="fixed top-0 right-0 w-full">
       <div
         class="flex lg:px-10 px-5 justify-between items-center py-3 transition-colors duration-500"
-        :class="{ 'bg-white': scrolled }"
+        :class="{ 'bg-white drop-shadow-lg': scrolled }"
       >
         <div class="flex items-center">
           <img

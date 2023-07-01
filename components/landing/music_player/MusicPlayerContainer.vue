@@ -111,7 +111,7 @@
           icon-id="loop"
           icon-title="Loop"
           :btn-custom-class="[
-            !looping
+            looping
               ? 'bg-violet-500 p-1 rounded-lg flex w-fit hover:bg-violet-300'
               : 'bg-violet-100 p-1 rounded-lg flex w-fit hover:bg-violet-300',
           ]"

@@ -19,7 +19,6 @@ export default {
   clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
   background-color: rgb(167 139 250);
   height: 140px;
-  z-index: -1;
   width: 100%;
   margin: -1px 0;
 }

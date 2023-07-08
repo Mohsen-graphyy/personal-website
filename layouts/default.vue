@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full z-50 from-right md:py-7 overflow-x-hidden">
+  <section class="w-full md:py-7">
     <desktop-header v-if="$breakpoints.xl"></desktop-header>
     <mobile-header v-else></mobile-header>
     <Nuxt />

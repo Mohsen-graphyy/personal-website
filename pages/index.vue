@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <div class="lg:px-28 md:px-10 px-5">
       <section
         class="pt-40 md:pt-20 flex flex-col md:flex-row justify-around items-center"
@@ -7,7 +7,7 @@
         <info-section class="basis-1/2"></info-section>
         <div class="basis-1/2 mt-10 md:mt-0 overflow-hidden hover:rounded-2xl">
           <img
-            class="z-1 object-cover hover:rounded-2xl rounded-2xl transform duration-200 hover:scale-150"
+            class="object-cover hover:rounded-2xl rounded-2xl transform duration-200 hover:scale-150"
             src="/personal-website/images/MohsenPiri.jpg"
             alt="mohsen piri"
           />
@@ -18,7 +18,7 @@
       <audio-content></audio-content>
       <music-player class="md:w-1/2"></music-player>
     </base-clip-fit-container>
-  </div>
+  </section>
 </template>
 <router>
   {
@@ -39,9 +39,3 @@ export default {
   },
 };
 </script>
-<style>
-.z-1 {
-  z-index: -1 !important;
-  position: relative;
-}
-</style>

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+
+@import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
+
+@import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;900&family=Raleway:wght@100;400;700&display=swap');
 
 * {

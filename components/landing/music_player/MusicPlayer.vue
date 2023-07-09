@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative p-5 bg-white md:p-3 rounded-lg my-20 md:my-24 flex items-center"
+    class="relative p-5 bg-white md:p-3 rounded-lg my-20 md:my-10 flex items-center"
   >
     <music-player-container
       file="file/StiveDemo.mp3"

@@ -23,7 +23,7 @@
       <div
         class="flex flex-col md:flex-row-reverse md:justify-between md:items-center md:gap-10"
       >
-        <h2 class="text-slate-800 basis-1/2 text-justify">
+        <h2 class="text-gray-100 basis-1/2 text-justify">
           My interest in music and narration has been a part of me since
           childhood, and I have recorded several books in audio format so far. I
           thought it would be a good idea to take this opportunity and introduce

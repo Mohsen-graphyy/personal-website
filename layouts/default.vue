@@ -2,7 +2,7 @@
   <section class="w-full md:py-7">
     <desktop-header v-if="$breakpoints.xl"></desktop-header>
     <mobile-header v-else></mobile-header>
-    <Nuxt />
+    <Nuxt class="bg-gray-50" />
   </section>
 </template>
 

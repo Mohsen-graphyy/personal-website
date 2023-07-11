@@ -23,11 +23,14 @@
           :key="item.id"
           class="flex items-center justify-center p-3"
           :style="{ height: `${itemHeight}px` }"
+          @click="$emit('show-person-idea', item)"
         >
           <div
-            class="w-full flex items-center h-full rounded-2xl p-5"
+            class="w-full flex items-center h-full rounded-2xl p-5 cursor-pointer transition-colors duration-200"
             :class="[
-              item.id == 2 ? 'drop-shadow-xl bg-white' : 'bg-violet-100',
+              item.id === selectedPerson.id
+                ? 'drop-shadow-xl bg-white'
+                : 'bg-violet-100',
             ]"
           >
             <img
@@ -49,7 +52,7 @@
     </div>
     <button
       @click="scroll(-1)"
-      class="bg-violet-400 p-1 rounded-lg w-fit mb-10 mt-5"
+      class="p-1 rounded-lg w-fit mb-10 mt-5"
       :class="[-maxTranslateY === translateY ? 'bg-gray-400' : 'bg-violet-400']"
     >
       <base-icon icon-path="Aroow" svg-class="w-auto text-white" />
@@ -60,10 +63,14 @@
 <script>
 export default {
   props: {
-    // sliderItem: {
-    //   type: Array,
-    //   required: true,
-    // },
+    sliderItem: {
+      type: Array,
+      required: true,
+    },
+    selectedPerson: {
+      type: Object,
+      required: true,
+    },
     itemHeight: {
       type: Number,
       default: 115,
@@ -77,64 +84,6 @@ export default {
     return {
       translateY: 0,
       maxTranslateY: 0,
-      sliderItem: [
-        {
-          id: 1,
-          title: "ali hajipour",
-          description: "Product manager / MaktabClass and MaktabBusiness",
-          image: "alihajipoor.jpg",
-        },
-        {
-          id: 2,
-          title: "ali fatemi",
-          description: "Flutter Developer / Google Chrome extention",
-          image: "alifatemi.jpg",
-        },
-        {
-          id: 3,
-          title: "amir chavoshi",
-          description: "Product Owner / MaktabBusiness",
-          image: "amirchavoshi.jpg",
-        },
-        {
-          id: 4,
-          title: "Kaveh Karimi",
-          description: "Frontend Leader / MaktabClass and MaktabBusiness",
-          image: "kavehkarami.jpg",
-        },
-        {
-          id: 5,
-          title: "Mahdi Taleghani",
-          description:
-            "Senior Software Engineer / Wp1click - Backsefid - Hoda accademy",
-          image: "mahditaleghani.jpg",
-        },
-        {
-          id: 6,
-          title: "matin onegh",
-          description: "Backend Developer / MaktabClass and MaktabBusiness",
-          image: "matin.jpg",
-        },
-        {
-          id: 7,
-          title: "Mohadeseh",
-          description: "HR Manager / Maktabkhooneh",
-          image: "mohadese.jpg",
-        },
-        {
-          id: 8,
-          title: "reza heydari",
-          description:
-            "Senior Software Engineer / MaktabClass and MaktabBusiness",
-          image: "rezaheydari.jpg",
-        },
-        {
-          id: 9,
-          title: "saba heydari doost",
-          description: "Data Science Reseacher / Detection Research",
-          image: "sabaheydaridoost.jpg",
-        },
-      ],
     };
   },
   mounted() {

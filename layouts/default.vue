@@ -1,8 +1,9 @@
 <template>
-  <section class="w-full md:py-7">
+  <section class="w-full md:pt-7">
     <desktop-header v-if="$breakpoints.xl"></desktop-header>
     <mobile-header v-else></mobile-header>
     <Nuxt class="bg-gray-50" />
+    <base-footer />
   </section>
 </template>
 

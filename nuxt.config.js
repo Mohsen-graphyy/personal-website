@@ -44,16 +44,7 @@ export default {
       },
     ],
   },
-  pageTransition: {
-    name: "slide",
-    mode: "out-in",
-  },
-  transitions: {
-    slide: {
-      enterActiveClass: "slide-enter-active",
-      leaveActiveClass: "slide-leave-active",
-    },
-  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["@/assets/css/main.css"],
 

@@ -2,7 +2,7 @@
   <section>
     <div class="lg:px-28 md:px-10 px-5">
       <section
-        class="pt-40 md:pt-40 flex flex-col md:flex-row justify-around items-center"
+        class="pt-40 md:pt-24 flex flex-col md:flex-row justify-around items-center"
       >
         <info-section class="basis-1/2"></info-section>
         <div class="basis-1/2 mt-10 md:mt-0 overflow-hidden hover:rounded-2xl">

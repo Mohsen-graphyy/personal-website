@@ -31,16 +31,16 @@ export default {
           title: "About Me",
           link: "aboutMe",
         },
-        {
-          id: 3,
-          title: "Home",
-          link: "home",
-        },
-        {
-          id: 4,
-          title: "Home",
-          link: "home",
-        },
+        // {
+        //   id: 3,
+        //   title: "Home",
+        //   link: "home",
+        // },
+        // {
+        //   id: 4,
+        //   title: "Home",
+        //   link: "home",
+        // },
       ],
       routeName: null,
     };

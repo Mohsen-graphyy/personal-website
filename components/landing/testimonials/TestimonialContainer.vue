@@ -69,7 +69,7 @@ export default {
           title: "Kaveh Karimi",
           description: "Frontend Leader / MaktabClass and MaktabBusiness",
           image: "kavehkarami.jpg",
-          idea: `"Mohsen's front-end development skills are second to none. He consistently delivers exceptional work that exceeds expectations. He is always willing to go the extra mile to ensure that the final product is of the highest quality. I would highly recommend him to anyone looking for a talented and knowledgeable front-end developer." - Emily Williams, Marketing Director at GHI Corporation.`,
+          idea: `"Mohsen is a hardworking and motivated person who is a pleasure to work with, he is very persistent and a person with morals and professionalism and has a lot of creativity. I recommend that if you are looking for a creative, energetic and committed front-end programmer, Mohsen is a worthy and suitable person for your position."`,
           linkdin: "https://www.linkedin.com/in/kaveh-karami/",
         },
         {
@@ -78,24 +78,8 @@ export default {
           description:
             "Senior Software Engineer / Wp1click - Backsefid - Hoda accademy",
           image: "mahditaleghani.jpg",
-          idea: `"Working with Mohsen was a pleasure. His attention to detail and ability to translate complex designs into responsive, user-friendly websites is remarkable. He is an excellent communicator who always keeps clients informed throughout the development process. I would highly recommend Mohsen to anyone looking for a skilled and reliable front-end developer." - Tom Davis, Owner of JKL Company.`,
-          linkdin: "",
-        },
-        {
-          id: 6,
-          title: "matin onegh",
-          description: "Backend Developer / MaktabClass and MaktabBusiness",
-          image: "matin.jpg",
-          idea: `"Mohsen is a highly skilled Nuxt.js developer who has been instrumental in the success of our web project. His ability to work collaboratively with our team and deliver high-quality code on time and on budget is truly impressive. He has a keen eye for detail and is always willing to go the extra mile to ensure that our application meets the highest standards. I would highly recommend Mohsen to anyone looking for a talented Nuxt.js developer." - Tom Johnson, Product Manager at GHI Corporation.`,
-          linkdin: "",
-        },
-        {
-          id: 7,
-          title: "Mohadeseh",
-          description: "HR Manager / Maktabkhooneh",
-          image: "mohadese.jpg",
-          idea: `"Mohsen is a fantastic Nuxt.js developer who has a deep understanding of the framework and its capabilities. His attention to detail and commitment to delivering high-quality code have been critical to the success of our web application. He is a great communicator who always kept us informed of his progress and provided valuable insights throughout the development process. I would highly recommend Mohsen to anyone looking for a skilled Nuxt.js developer." - Sarah Williams, CTO of JKL Company.`,
-          linkdin: "",
+          idea: `"I wholeheartedly endorse Mohsen for frontend development. He is intelligent, hardworking, and impressively creative. His dedication to self-improvement and passion for design sets him apart. Mohsen's brilliant ideas shine through in his work, making him an invaluable asset to any team. Highly recommended!"`,
+          linkdin: "https://www.linkedin.com/in/mahdi-taleghani/",
         },
         {
           id: 8,
